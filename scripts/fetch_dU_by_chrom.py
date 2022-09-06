@@ -54,7 +54,9 @@ def main():
 			continue
 		if read.mapping_quality < 60:
 			continue
-
+		
+		mapq = read.mapping_quality
+		
 		# for negtive strand
 		# dU located in read end + 1
 		if read.is_reverse:
